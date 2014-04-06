@@ -20,8 +20,14 @@ class Foo {
     }
 }
 
-$f = new Foo(123);
-$f->add(456);
+//needed, typechecker doesn't check in global space
+function main() {
 
-// gives error with hh_client
-$f->add("banana");
+    $f = new Foo(123);
+    $f->add(456);
+
+    // gives error with hh_client
+    $f->add("banana");
+}
+
+main();
