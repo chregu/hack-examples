@@ -27,7 +27,7 @@ function main() {
     $f->add(456);
 
     // gives error with hh_client
-    $f->add("banana");
+    //$f->add("banana");
 }
 
 main();
