@@ -16,7 +16,7 @@ class Foo {
     }
 
     // Constructor arg promotion
-    public function __constructor(private int $num): void {
+    public function __construct(private int $num): void {
     }
 }
 
